@@ -1,4 +1,4 @@
-# TypeScript CRA with husky
+# TypeScript Vite with husky
 
 ## 설치
 
