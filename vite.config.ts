@@ -10,10 +10,10 @@ export default defineConfig({
       { find: "@", replacement: resolve(__dirname, "src") },
       {
         find: "@components",
-        replacement: resolve(__dirname, "src/components"),
-      },
-    ],
+        replacement: resolve(__dirname, "src/components")
+      }
+    ]
   },
 
-  plugins: [react(), tsconfigPaths()],
+  plugins: [react(), tsconfigPaths()]
 });
