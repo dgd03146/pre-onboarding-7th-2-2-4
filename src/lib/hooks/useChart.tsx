@@ -17,19 +17,19 @@ interface dataPros {
 }
 
 // TODO: filter 첫번째랑 두번째 다른거
-const getFirstFilterData = (filter: string, dayData: dataPros[]) => {
-  dayData.map((it) => {});
+// const getFirstFilterData = (filter: string, dayData: dataPros[]) => {
+//   dayData.map((it) => {});
 
-  // switch (filter) {
-  //   case "ROAS":
+//   // switch (filter) {
+//   //   case "ROAS":
 
-  // }
-};
+//   // }
+// };
 
 const useChart = () => {
   const startDate = useRecoilValue(startState);
   const categories = chartCategoryDate(startDate);
-  const firstFilter = useRecoilValue(firstFilterState);
+  // const firstFilter = useRecoilValue(firstFilterState);
 
   const { week, dayData } = weekChart(startDate);
 
@@ -76,7 +76,7 @@ const useChart = () => {
     }
   };
 
-  return { series, options, week };
+  return { series, options, week, dayData };
 };
 
 export default useChart;
